@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="fr"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noarchive"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><title>Errata — Corrections majeures de la version publique | Nicole-Belloubet.fr (non officiel)</title><link rel="icon" href="/images/icon-32.jpg"><link rel="apple-touch-icon" sizes="180x180" href="/images/icon-180.jpg"><link rel="canonical" href="https://www.nicole-belloubet.fr/errata/"><link rel="alternate" hreflang="en" href="https://www.nicole-belloubet.com/errata/"><link rel="alternate" hreflang="fr" href="https://www.nicole-belloubet.fr/errata/"><link rel="alternate" hreflang="x-default" href="https://www.nicole-belloubet.com/errata/"><meta property="og:site_name" content="Nicole-Belloubet.fr (non officiel)"><meta property="og:title" content="Errata — Corrections majeures de la version publique | Nicole-Belloubet.fr (non officiel)"><meta property="og:type" content="website"><meta property="og:url" content="https://www.nicole-belloubet.fr/errata/"><meta property="og:locale" content="fr"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Errata — Corrections majeures de la version publique | Nicole-Belloubet.fr (non officiel)"><script>
+      (function () {
+        var pref = localStorage.getItem("theme") || "auto";
+        var resolved = pref === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : pref;
+        document.documentElement.setAttribute("data-theme", resolved);
+      })();
+    </script><link rel="stylesheet" href="/_astro/Base.DL9meBB_.css">
+<link rel="stylesheet" href="/_astro/_..BgH5Jut5.css"></head> <body> <nav class="nav"> <div class="nav-inner">  <div class="nav-row-1"> <a href="/" class="nav-brand">Nicole-Belloubet.fr (non officiel)</a> <button class="nav-hamburger" type="button" aria-expanded="false" aria-label="Menu"> <span class="hamburger-label">Menu &rarr;</span> <span class="hamburger-icon"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </span> </button> <div class="nav-controls"> <div class="theme-toggle" role="group" aria-label="Theme"> <button type="button" data-theme-set="light">Mode jour</button> <button type="button" data-theme-set="dark">Mode nuit</button> <button type="button" data-theme-set="auto">Mode automatique</button> </div> <script>
+(function () {
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(pref) {
+    var resolved = pref === "auto" ? getSystemTheme() : pref;
+    document.documentElement.setAttribute("data-theme", resolved);
+
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-theme-set") === pref);
+    });
+  }
+
+  var stored = localStorage.getItem("theme") || "auto";
+  applyTheme(stored);
+
+  document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pref = btn.getAttribute("data-theme-set");
+      localStorage.setItem("theme", pref);
+      applyTheme(pref);
+    });
+  });
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+    if ((localStorage.getItem("theme") || "auto") === "auto") {
+      applyTheme("auto");
+    }
+  });
+})();
+</script> <div class="lang-switcher"> <button type="button" class="lang-switcher-btn" aria-expanded="false"> Français </button> <div class="lang-dropdown"> <a href="https://www.nicole-belloubet.com/errata/"> English </a><a href="https://www.nicole-belloubet.fr/errata/" class="current"> Français </a><a href="https://it.ecthrwatch.org/errata-corrige/"> Italiano </a><a href="https://zh.ecthrwatch.org/jiuzheng/"> 简体中文 </a> </div> </div> </div> </div> <ul class="nav-links"> <li><a href="/lettres-ouvertes-et-chronologie-des-faits/">Chronologie et Lettres Ouvertes</a></li><li><a href="/cia-et-implication-d-autres-services-de-renseignement-etrangers/">CIA, DGSE, et autres</a></li><li><a href="/risques-de-torture-et-de-peine-de-mort-en-chine/">Risques de Peine de Mort en Chine</a></li><li><a href="/procedures-judiciaires-en-cours/">Procédures Judiciaires</a></li><li><a href="/analyses-par-intelligence-artificielle-confirmant-les-fraudes-de-mcdonalds/">Analyses par IA</a></li> </ul> </div> </nav> <script>
+(function () {
+  // Hamburger toggle
+  var hamburger = document.querySelector(".nav-hamburger");
+  var navLinks = document.querySelector(".nav-links");
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", function () {
+      var expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", String(!expanded));
+      navLinks.classList.toggle("open");
+    });
+  }
+
+  // Language switcher dropdown
+  var langBtn = document.querySelector(".lang-switcher-btn");
+  var langDropdown = document.querySelector(".lang-dropdown");
+  if (langBtn && langDropdown) {
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var expanded = langBtn.getAttribute("aria-expanded") === "true";
+      langBtn.setAttribute("aria-expanded", String(!expanded));
+      langDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      langBtn.setAttribute("aria-expanded", "false");
+      langDropdown.classList.remove("open");
+    });
+  }
+})();
+</script> <main> <div class="page-container" data-astro-cid-iwstzw75> <h1 data-astro-cid-iwstzw75>Errata — Corrections majeures de la version publique</h1> <div class="intro-content prose" data-astro-cid-iwstzw75><h2>Registre de transparence éditoriale</h2>
+<p>Cette page est un journal public, volontairement concis, des
+modifications <strong>majeures</strong> apportées au contenu de ce site —
+principalement des suppressions pour raisons de confidentialité, des
+corrections factuelles de matériel publié, et des remplacements
+significatifs de contenu dont les visiteurs devraient être informés.
+Les corrections de coquilles, les ajustements de mise en forme et les
+mises à jour de routine sont intentionnellement omis pour préserver
+l&#39;utilité de cette page.</p>
+<p>Pour l&#39;historique complet, octet par octet, le HTML statique déployé
+de chaque langue est stocké dans un dépôt GitHub public :</p>
+<ul>
+<li>Français (ce site) : <a href="https://github.com/ecthrwatch/fr.ecthrwatch.org">https://github.com/ecthrwatch/fr.ecthrwatch.org</a></li>
+<li>Anglais : <a href="https://github.com/ecthrwatch/www.ecthrwatch.org">https://github.com/ecthrwatch/www.ecthrwatch.org</a></li>
+<li>Chinois : <a href="https://github.com/ecthrwatch/zh.ecthrwatch.org">https://github.com/ecthrwatch/zh.ecthrwatch.org</a></li>
+</ul>
+<p>Toute personne peut cloner ces dépôts et utiliser <code>git log</code> pour
+inspecter chaque commit. Lorsque le registre public a été délibérément
+modifié (par exemple, pour retirer une adresse e-mail privée qui s&#39;est
+retrouvée par inadvertance dans une URL), ce fait est également
+documenté ici — afin que l&#39;omission elle-même reste transparente.</p>
+<hr>
+<h3>2026-05-18 — Suppression d&#39;une adresse e-mail privée de l&#39;historique des URL</h3>
+<p>(Le contenu détaillé de cette entrée sera traduit prochainement. En
+attendant, voir la <a href="https://www.ecthrwatch.org/errata/">version anglaise</a>
+pour le récit complet.)</p>
+<hr>
+<h3>Notes</h3>
+<p>Si vous avez constaté sur ce site un élément qui devrait selon vous
+figurer sur cette page errata et n&#39;y est pas, veuillez prendre contact
+via la page <a href="/a-propos/">À propos</a>.</p>
+</div>  <ul class="errata-list" data-astro-cid-iwstzw75> <li class="errata-list-item" data-astro-cid-iwstzw75> <span class="errata-list-date" data-astro-cid-iwstzw75>2026-05-20</span> <span class="errata-list-sep" data-astro-cid-iwstzw75> — </span> <a href="/errata/2026-05-20-1552-0800-featured-image-corrected-ai-altered-content/" class="errata-list-link" data-astro-cid-iwstzw75>Image principale corrigée — texte altéré par l&#39;IA retiré (entrée avocat-épouse)</a> <p class="errata-list-summary" data-astro-cid-iwstzw75>ChatGPT, en assemblant l&#39;image principale de l&#39;entrée à partir de composants antérieurs, a altéré un fragment de texte à l&#39;intérieur de l&#39;image sans autorisation. Le texte altéré introduisait une attribution factuelle erronée. L&#39;image a été remplacée par la version initialement prévue ; cette page documente en détail la chaîne des événements afin que le même type d&#39;erreur soit plus facile à repérer — et plus facile à éviter — la prochaine fois.</p> </li><li class="errata-list-item" data-astro-cid-iwstzw75> <span class="errata-list-date" data-astro-cid-iwstzw75>2026-05-18</span> <span class="errata-list-sep" data-astro-cid-iwstzw75> — </span> <a href="/errata/2026-05-18-2214-0800-private-email-username-removal/" class="errata-list-link" data-astro-cid-iwstzw75>Nom d&#39;utilisateur d&#39;un courriel privé retiré de l&#39;historique des URL</a> <p class="errata-list-summary" data-astro-cid-iwstzw75>Une migration de données back-end a brièvement intégré la partie locale d&#39;une adresse de courriel personnelle dans un slug d&#39;URL de `/people/` et `/parties/`. Le slug a été renommé dans la source ; l&#39;historique git des dépôts de déploiement a été réécrit pour supprimer la chaîne de chaque commit.</p> </li> </ul> </div> </main> <footer class="footer"> <div class="footer-links">  <a href="/">Accueil</a> <span class="footer-sep"> | </span> <a href="/a-propos/">À propos</a> <span class="footer-sep"> | </span> <a href="/droits-d-auteur-et-avertissement/">Droits d&#39;auteur et avertissement</a> <span class="footer-sep"> | </span> <a href="/autres-sites/">Autres sites</a> <span class="footer-sep"> | </span> <a href="/lois-et-reglementations-applicables/">Lois</a> <span class="footer-sep"> | </span> <a href="/timeline-of-events-and-open-letters/latest-crime-report-criminal-rico-case-targeting-mcdonalds/">Signalement au FBI (en anglais)</a> <span class="footer-sep"> | </span> <a href="/liste-des-preuves/">Preuves</a> <span class="footer-sep"> | </span> <a href="/chronologie-detaillee-des-faits-et-lettres-ouvertes/">Chronologie détaillée</a> <span class="footer-sep"> | </span> <a href="/errata/">Errata</a>  </div> <div class="footer-org">European Court of Human Rights Watch</div> <div>&copy; 2021-2026 <a href="https://www.linkedin.com/in/x-v-france/">Vincent Le Corre</a></div> </footer> </body></html>

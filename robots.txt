@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://www.nicole-belloubet.fr/sitemap-index.xml
